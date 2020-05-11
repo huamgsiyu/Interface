@@ -18,8 +18,8 @@ public class AliyunSms {
      * @param phoneNumbers      接收短信的手机号码
      * @param signName          短信签名名称
      * @param templateCode      短信模板ID
-     * @param accessKeyId       阿里云AccessKey            LTAI4GDtjyYEm1FoXbmpgFaK
-     * @param accessSecret      阿里云AccessKey Secret     2g5gEJ4hYS90Z2vzU36RREYBLJUz07
+     * @param accessKeyId       阿里云AccessKey
+     * @param accessSecret      阿里云AccessKey Secret
      * @param templateParam     短信模板变量对应的实际值，JSON格式
      * @return    CommonResponse
      */
