@@ -48,8 +48,8 @@ public class AliyunSms {
      * @param signName          短信签名名称
      * @param templateCode      短信模板ID
      * @param templateParam     短信模板变量对应的实际值，JSON格式
-     * @param accessKeyId       阿里云AccessKey            LTAI4GDtjyYEm1FoXbmpgFaK
-     * @param accessSecret      阿里云AccessKey Secret     2g5gEJ4hYS90Z2vzU36RREYBLJUz07
+     * @param accessKeyId       阿里云AccessKey
+     * @param accessSecret      阿里云AccessKey Secret
      * @param domain            域名
      * @param version           版本
      * @param action            执行动作
