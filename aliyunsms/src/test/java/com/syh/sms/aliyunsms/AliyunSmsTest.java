@@ -1,6 +1,7 @@
 package com.syh.sms.aliyunsms;
 
 import com.aliyuncs.CommonResponse;
+import com.syh.util.TakeRandomNumUtil;
 import org.junit.Test;
 
 /**
@@ -17,7 +18,7 @@ public class AliyunSmsTest {
         CommonResponse commonResponse = AliyunSms.setSms("XXX",
                 "XXX",
                 "XXX",
-                getMessage(),
+                generateVerificationCode(6),
                 "XXX",
                 "XXX");
         System.out.println("commonResponse = " + commonResponse.getData());
@@ -26,11 +27,7 @@ public class AliyunSmsTest {
             【业务监控系统】您的验证码323383，该验证码5分钟内有效，请勿泄漏于他人！
          */
     }
-    private static java.lang.String getMessage() {
-        return "{\"code\":\"" + getRandomNum() + "\"}";
-    }
-
-    private static int getRandomNum() {
-        return (int)((Math.random() * 9 + 1) * 100000);
+    private static String generateVerificationCode(int digits) {
+        return "{\"code\":\"" + TakeRandomNumUtil.getNum(digits) + "\"}";
     }
 }
