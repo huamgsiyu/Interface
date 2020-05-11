@@ -73,7 +73,7 @@ public class AliyunSms {
         request.setDomain(domain);
         request.setVersion(version);
         request.setAction(action);
-        request.putQueryParameter("RegionId", "cn-hangzhou");
+        request.putQueryParameter("RegionId", regionId);
         request.putQueryParameter("PhoneNumbers", phoneNumbers);
         request.putQueryParameter("SignName", signName);
         request.putQueryParameter("TemplateCode", templateCode);
